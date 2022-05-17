@@ -3,6 +3,7 @@ package classes;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,8 @@ public class CeasarCipher {
                 }
             }
         }
-        writeFile(path);
+        writeEncryptedFile(path);
+        text.clear();
     }
 
     public static void decrypt(Path path, int shift) {
@@ -42,7 +44,8 @@ public class CeasarCipher {
                 }
             }
         }
-        writeFile(path);
+        writeDecryptedFile(path);
+        text.clear();
     }
 
     public static void brutForce(Path path) {
@@ -74,8 +77,10 @@ public class CeasarCipher {
                 text = copyText;
                 break;
             }
+            copyText.clear();
         }
-        writeFile(path);
+        writeDecryptedFile(path);
+        text.clear();
     }
 
     private static void readFile(Path path) {
@@ -88,8 +93,28 @@ public class CeasarCipher {
         }
     }
 
-    private static void writeFile(Path path) {
-        try (OutputStreamWriter outputStreamWriter = new OutputStreamWriter(Files.newOutputStream(path), "UTF-8")) {
+    private static void writeEncryptedFile(Path path) {
+        String str = path.getParent().toString();
+        String[] name = path.getFileName().toString().split("\\.");
+        String newName = name[0] + "Encrypted." + name[1];
+        Path newPath = Path.of(str, newName);
+
+        try (OutputStreamWriter outputStreamWriter = new OutputStreamWriter(Files.newOutputStream(newPath), "UTF-8")) {
+            for (Character character : text) {
+                outputStreamWriter.write(character);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void writeDecryptedFile(Path path) {
+        String str = path.getParent().toString();
+        String[] name = path.getFileName().toString().split("\\.");
+        String newName = name[0] + "Decrypted." + name[1];
+        Path newPath = Path.of(str, newName);
+
+        try (OutputStreamWriter outputStreamWriter = new OutputStreamWriter(Files.newOutputStream(newPath), "UTF-8")) {
             for (Character character : text) {
                 outputStreamWriter.write(character);
             }

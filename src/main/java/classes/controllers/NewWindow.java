@@ -8,8 +8,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class NewWindow {
+
+    FXMLLoader loader = new FXMLLoader();
+
     public void openNewWindow(String nameFXML) {
-        FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(nameFXML));
         try {
             loader.load();
@@ -19,6 +21,6 @@ public class NewWindow {
         Parent root = loader.getRoot();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
-        stage.showAndWait();
+        stage.show();
     }
 }
