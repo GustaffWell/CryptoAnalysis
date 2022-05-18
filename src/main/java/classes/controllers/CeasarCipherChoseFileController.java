@@ -69,10 +69,6 @@ public class CeasarCipherChoseFileController {
                 continueButton.getScene().getWindow().hide();
                 newWindow.openNewWindow("ShiftNotNumber.fxml");
             }
-            if (shift > 10 || shift < 1) {
-                continueButton.getScene().getWindow().hide();
-                newWindow.openNewWindow("ShiftNotNumber.fxml");
-            }
             CeasarCipher.encrypt(path, shift);
             continueButton.getScene().getWindow().hide();
             newWindow.openNewWindow("FileEncryptedWindow.fxml");

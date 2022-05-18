@@ -3,7 +3,6 @@ package classes;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -73,7 +72,6 @@ public class CeasarCipher {
             }
             String str = new String(result);
             if (str.contains(". ") && str.contains(", ") && !str.contains("  ")) {
-                System.out.println("Текст расшифрован");
                 text = copyText;
                 break;
             }

@@ -22,7 +22,7 @@ public class FileNotChoseController {
     void initialize() {
         OKButton.setOnAction(actionEvent -> {
             OKButton.getScene().getWindow().hide();
-            newWindow.openNewWindow("CeasarCipherChoseFile.fxml");
+            newWindow.openNewWindow("hello.fxml");
         });
     }
 }

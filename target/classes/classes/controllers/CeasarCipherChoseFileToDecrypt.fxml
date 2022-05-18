@@ -26,13 +26,13 @@
                         <Font size="24.0" />
                     </font>
                 </Button>
-                <Label layoutX="276.0" layoutY="108.0" prefHeight="18.0" prefWidth="204.0" text="Введите ключ (от 1 до 10)" textFill="#fafafa" AnchorPane.leftAnchor="276.0" AnchorPane.rightAnchor="220.0" />
+                <Label layoutX="276.0" layoutY="99.0" prefHeight="18.0" prefWidth="204.0" text="Введите ключ (целое число)" textFill="#fafafa" AnchorPane.leftAnchor="276.0" AnchorPane.rightAnchor="220.0" />
                 <Button fx:id="continueButton" layoutX="217.0" layoutY="172.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="262.0" style="-fx-background-color: #1f3a3d; -fx-background-radius: 10;" text="Продолжить" textFill="#fafafa" AnchorPane.leftAnchor="217.0" AnchorPane.rightAnchor="220.60000000000002">
                     <font>
                         <Font size="24.0" />
                     </font>
                 </Button>
-                <TextField fx:id="shiftEnterField" focusTraversable="true" layoutX="280.0" layoutY="136.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#initialize" pickOnBounds="false" prefHeight="26.0" prefWidth="136.0" promptText="1-10" snapToPixel="false" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="284.0">
+                <TextField fx:id="shiftEnterField" focusTraversable="true" layoutX="280.0" layoutY="128.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#initialize" pickOnBounds="false" prefHeight="26.0" prefWidth="136.0" promptText="Целое число" snapToPixel="false" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="284.0">
                     <cursor>
                         <Cursor fx:constant="DEFAULT" />
                     </cursor></TextField>

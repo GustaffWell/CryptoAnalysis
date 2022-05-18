@@ -19,7 +19,7 @@
                         <Font size="24.0" />
                     </font>
                 </Button>
-                <Label layoutX="223.0" layoutY="100.0" prefHeight="62.0" prefWidth="307.0" text=" Файл не выбран! Виберите файл!" textFill="#fafafa">
+                <Label layoutX="236.0" layoutY="100.0" prefHeight="62.0" prefWidth="307.0" text=" Файл или файлы не выбраны!" textFill="#fafafa">
                     <font>
                         <Font size="16.0" />
                     </font>

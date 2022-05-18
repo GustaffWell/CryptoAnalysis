@@ -19,7 +19,7 @@
                         <Font size="24.0" />
                     </font>
                 </Button>
-                <Label layoutX="227.0" layoutY="113.0" prefHeight="62.0" prefWidth="307.0" text="Введите целое число от 1 до 10!" textFill="#fafafa">
+                <Label layoutX="269.0" layoutY="111.0" prefHeight="62.0" prefWidth="307.0" text="Введите целое число!" textFill="#fafafa">
                     <font>
                         <Font size="16.0" />
                     </font>

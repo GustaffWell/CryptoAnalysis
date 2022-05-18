@@ -33,6 +33,11 @@ public class HelloController {
             newWindow.openNewWindow("CeasarCipherWin1.fxml");
         });
 
+        statisticButton.setOnAction(actionEvent -> {
+            statisticButton.getScene().getWindow().hide();
+            newWindow.openNewWindow("StatisticalChoseFiles.fxml");
+        });
+
         exitButton.setOnAction(event -> {
             System.exit(1);
         });
