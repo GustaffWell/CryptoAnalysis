@@ -14,7 +14,7 @@
         </Label>
         <AnchorPane layoutY="75.0" pickOnBounds="false" prefHeight="325.0" prefWidth="700.0" style="-fx-background-color: #004953;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
             <children>
-                <Button fx:id="OKButton" layoutX="217.0" layoutY="241.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="262.0" style="-fx-background-color: #1f3a3d; -fx-background-radius: 10;" text="Ок" textFill="#fafafa" AnchorPane.leftAnchor="217.0" AnchorPane.rightAnchor="220.60000000000002">
+                <Button fx:id="OKButton" layoutX="217.0" layoutY="241.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="262.0" style="-fx-background-color: #1f3a3d; -fx-background-radius: 10;" text="Ок" textFill="#fafafa" AnchorPane.leftAnchor="217.0">
                     <font>
                         <Font size="24.0" />
                     </font>
